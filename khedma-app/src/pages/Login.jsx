@@ -195,6 +195,15 @@ export default function Login() {
             </div>
             {error && <div className="login-error">{error}</div>}
             {loading && <div className="login-verifying">Vérification…</div>}
+            {!loading && (
+              <button
+                className="btn-primary login-submit"
+                onClick={() => verifyOtp(otp.join(''))}
+                disabled={otp.join('').length < 4}
+              >
+                Valider →
+              </button>
+            )}
             <button className="login-resend" onClick={resend} disabled={countdown > 0}>
               {countdown > 0 ? `Renvoyer dans ${countdown}s` : 'Renvoyer le code'}
             </button>
