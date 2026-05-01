@@ -18,6 +18,8 @@
   width: 100%; max-width: 420px;
   box-shadow: 0 40px 80px rgba(0,0,0,0.4);
   animation: fadeUp 0.5s ease both;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .login-logo {
@@ -122,13 +124,26 @@
 .login-hint strong { color: var(--green); }
 
 /* OTP */
-.otp-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 16px; }
+.otp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
 .otp-input {
-  height: 64px; background: var(--navy3);
-  border: 1.5px solid var(--border); border-radius: var(--radius-sm);
-  text-align: center; font-family:'Syne',sans-serif;
-  font-size: 28px; font-weight: 800; color: var(--white);
+  height: 60px;
+  width: 100%;
+  min-width: 0;
+  background: var(--navy3);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  font-family:'Syne',sans-serif;
+  font-size: 26px; font-weight: 800; color: var(--white);
   transition: var(--transition);
+  box-sizing: border-box;
 }
 .otp-input:focus { border-color: var(--green); outline: none; }
 .otp-input--loading { opacity: 0.5; }
