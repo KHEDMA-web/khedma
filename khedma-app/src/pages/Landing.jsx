@@ -257,7 +257,7 @@ export default function Landing() {
             K<span style={{ color: 'var(--green)' }}>H</span>EDMA
           </span>
           <span style={{ fontSize: 13, color: 'var(--muted)' }}>
-            Convention signée avec YINVESTI SPA · 30 avril 2026 · Alger
+            © 2026 KHEDMA · Alger, Algérie
           </span>
           <span className="badge badge-green">🇩🇿 Made in Algeria</span>
         </div>
