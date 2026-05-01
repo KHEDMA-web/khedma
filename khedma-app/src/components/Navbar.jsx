@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="navbar__inner container">
         <Link to="/" className="navbar__logo">
           <Briefcase size={20} strokeWidth={2.5} />
-          K<span>H</span>EDMA
+          {'K'}<span>{'H'}</span>{'EDMA'}
         </Link>
 
         {/* Desktop links */}
